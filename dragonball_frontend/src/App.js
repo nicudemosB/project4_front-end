@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Add from './components/Add'
 
 const App = () => {
 const [character, setCharacter] = useState([])
@@ -18,7 +19,7 @@ const handleCreate = (addCharacter) => {
   .post('http://localhost:8000/api/characters', addCharacter)
   .then((response) => {
     console.log(response)
-    getCharacter
+    getCharacter()
   })
 }
 

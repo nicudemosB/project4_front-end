@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState,} from 'react'
 
 const Add = (props) => {
   let emptyHero = {name: '', age: '', power_level:'', transformation: ''}
@@ -12,7 +12,7 @@ const Add = (props) => {
     event.preventDefault()
     props.handleCreate(hero)
   }
-  
+
   return (
     <>
     <form onSubmit={handleSubmit}>
