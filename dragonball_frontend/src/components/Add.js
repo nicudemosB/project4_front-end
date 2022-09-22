@@ -1,4 +1,4 @@
-import React, {useState,} from 'react'
+import React, {useState} from 'react'
 
 const Add = (props) => {
   let emptyHero = {name: '', age: '', power_level:'', transformation: ''}
